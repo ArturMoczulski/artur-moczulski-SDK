@@ -1,0 +1,19 @@
+{
+  "name": "artur-moczulski-sdk",
+  "version": "1.0.0",
+  "description": "SDK for The One API for the LibLab coding assessment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturMoczulski/artur-moczulski-SDK.git"
+  },
+  "author": "Artur Moczulski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturMoczulski/artur-moczulski-SDK/issues"
+  },
+  "homepage": "https://github.com/ArturMoczulski/artur-moczulski-SDK#readme"
+}
