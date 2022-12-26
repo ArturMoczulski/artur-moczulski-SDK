@@ -14,7 +14,7 @@ you will need to obtain an [access key for The One API](https://the-one-api.dev/
 ### Importing the library in you code
 
 ```
-require 'artur-moczulski-SDK'
+const theOneSDK = require('artur-moczulski-SDK')
 ```
 
 ### Authentication
