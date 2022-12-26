@@ -31,3 +31,10 @@ directory.
 
 The *./lib/logging* directory contains the logic used for internal SDK
 logging.
+
+## Testing
+
+### Mocks
+
+The library is tested against mock responses stored in *./test/mocks*. Those
+are slightly modified versions of actual responses from The One API.
