@@ -21,3 +21,13 @@ SDK options in the `require` call, i.e.:
 ```
 const debug = require("./logging/debug")({ debug: "DEBUG" })
 ```
+
+## Directory structure
+
+The functionality related do different endpoints of the API is organized in
+directories mimicing the names of The One API endpoints, for example: all 
+the code related to the */book* endpoint can be found in *./lib/book* 
+directory.
+
+The *./lib/logging* directory contains the logic used for internal SDK
+logging.
