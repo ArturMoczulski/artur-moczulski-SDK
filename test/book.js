@@ -7,21 +7,23 @@ module.exports = (theOneSDK) => {
   return () => {
 
     describe('#books()', function () {
-      it('should return the list of LOTR books', async function () {
-
+      this.beforeAll(() => {
         nock("https://the-one-api.dev/v2/")
           .get("/book/")
           .replyWithFile(200, __dirname + '/mocks/allBooks.json', {
             'Content-Type': 'application/json',
           })
+      })
 
-        const response = await request
-          .get('/book/')
+      it('should return the list of LOTR books', async function () {
 
-        expect(response.status).equal(200);
-        expect(response.body.total).equal(3);
+        // const response = await request
+        //   .get('/book/')
+        // expect(response.status).equal(200);
+        // expect(response.body.total).equal(3);
 
-        // theOneSDK.books()
+        const result = await theOneSDK.books()
+        expect(result.length).equal(3)
       });
     });
 

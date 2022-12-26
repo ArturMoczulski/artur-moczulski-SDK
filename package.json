@@ -22,5 +22,8 @@
     "mocha": "^10.2.0",
     "nock": "^13.2.9",
     "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
   }
 }
