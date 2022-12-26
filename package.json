@@ -18,6 +18,9 @@
   "homepage": "https://github.com/ArturMoczulski/artur-moczulski-SDK#readme",
   "devDependencies": {
     "ansi-colors": "^4.1.3",
-    "mocha": "^10.2.0"
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nock": "^13.2.9",
+    "supertest": "^6.3.3"
   }
 }
