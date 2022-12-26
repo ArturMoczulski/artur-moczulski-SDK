@@ -1,0 +1,14 @@
+{
+  "name": "artur-moczulski-sdk-example-project",
+  "version": "1.0.0",
+  "description": "Showcase of using the artur-moczulski-sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Artur Moczulski",
+  "license": "ISC",
+  "dependencies": {
+    "artur-moczulski-sdk": "^1.0.0"
+  }
+}
