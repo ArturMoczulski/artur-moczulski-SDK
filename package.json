@@ -4,7 +4,7 @@
   "description": "SDK for The One API for the LibLab coding assessment.",
   "main": "lib/entry.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ArturMoczulski/artur-moczulski-SDK/issues"
   },
-  "homepage": "https://github.com/ArturMoczulski/artur-moczulski-SDK#readme"
+  "homepage": "https://github.com/ArturMoczulski/artur-moczulski-SDK#readme",
+  "devDependencies": {
+    "ansi-colors": "^4.1.3",
+    "mocha": "^10.2.0"
+  }
 }
