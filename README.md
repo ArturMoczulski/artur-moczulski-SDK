@@ -39,3 +39,12 @@ await theOneSDK.books()
 To run all the tests:
 
 `npm test`
+
+## Documention
+
+### Example project
+
+This repo contains an example project in *./docs/example-project* which utilizes
+the SDK through the npm registry. Some exapmles of real world library usage
+can be found there. The purpose of the example project is to be a simple
+The One API browser.
