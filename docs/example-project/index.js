@@ -1,8 +1,9 @@
 require('dotenv').config()
+const term = require( 'terminal-kit' ).terminal ;
+
 const theOneSDK = require('artur-moczulski-sdk')({
   accessKey: process.env.THE_ONE_API_ACCESS_KEY
 })
-const term = require( 'terminal-kit' ).terminal ;
 
 term.cyan( 'The One API browser\n' ) ;
 
