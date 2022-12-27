@@ -1,6 +1,6 @@
 {
   "name": "artur-moczulski-sdk",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "SDK for The One API for the LibLab coding assessment.",
   "main": "lib/entry.js",
   "scripts": {
