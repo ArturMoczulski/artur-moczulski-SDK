@@ -32,6 +32,20 @@ directory.
 The *./lib/logging* directory contains the logic used for internal SDK
 logging.
 
+## Functional objects
+
+The SDK decorates the JSON data returned from the API with utility functions that
+makes working with them easy. In the following example the book object fetched
+by the SDK will also fetch the chapters data from the API if requested. The
+chapters of the book will get added in the *chapters* property of the book.
+
+```
+let books = await theOneSDK.books()
+let fellowship = books[0]
+fellowship.fetchChapters()
+console.log(fellowship.chapters)
+```
+
 ## Testing
 
 ### Mocks

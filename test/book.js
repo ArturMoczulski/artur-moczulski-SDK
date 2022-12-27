@@ -40,5 +40,35 @@ module.exports = (theOneSDK) => {
       });
     });
 
+    describe('Book type', function() {
+      this.beforeAll(() => {
+        nock("https://the-one-api.dev/v2/")
+          .get("/book/mockApiId001")
+          .replyWithFile(200, __dirname + '/mocks/book_mockApiId001.json', {
+            'Content-Type': 'application/json',
+          })
+      })
+
+      this.beforeAll(() => {
+        nock("https://the-one-api.dev/v2/")
+          .get("/book/mockApiId001/chapter")
+          .replyWithFile(200, __dirname + '/mocks/book_mockApiId001_chapters.json', {
+            'Content-Type': 'application/json',
+          })
+      })
+
+      describe('#fetchChapters()', () => {
+        it('should ', async function () {
+          const book = await theOneSDK.book("mockApiId001")
+          await book.fetchChapters()
+          expect(book.chapters.length).to.equal(22)
+          expect(book.chapters[0].chapterName).to.equal("A Long-expected Party")
+          expect(book.chapters[book.chapters.length-1].chapterName).to.equal("The Breaking of the Fellowship")
+        });
+      });
+      
+    });
+    
+
   }
 }
