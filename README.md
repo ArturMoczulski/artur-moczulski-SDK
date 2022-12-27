@@ -3,6 +3,18 @@
 This SDK provides an easy programmatic layer over [The One API](https://the-one-api.dev/). To use it
 you will need to obtain an [access key for The One API](https://the-one-api.dev/sign-up).
 
+## The easiest way to see the SDK in action
+
+```
+git clone git@github.com:ArturMoczulski/artur-moczulski-SDK.git
+cd artur-moczulski-SDK/docs/example-project
+cp .env.example .env
+```
+
+Change the access key in .env to your The One API access key.
+
+`node index.js`
+
 ## Install
 
 `cd` into your project and type:
