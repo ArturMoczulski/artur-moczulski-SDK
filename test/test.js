@@ -27,7 +27,10 @@ describe('theOneSDK', function () {
 
   describe('suites', () => {
 
-    const theOneSDK = require('../lib/entry')({debug: "DEBUG"})
+    const theOneSDK = require('../lib/entry')({
+      accessKey: "123",
+      debug: "DEBUG"
+    })
 
     const bookSuite = require('./book')(theOneSDK)
     describe('book suite', bookSuite.bind(this));

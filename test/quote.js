@@ -8,7 +8,11 @@ module.exports = (theOneSDK) => {
 
     describe('#quotes()', function () {
       this.beforeAll(() => {
-        nock("https://the-one-api.dev/v2/")
+        nock("https://the-one-api.dev/v2/", {
+          reqheaders: {
+            "Authorization": 'Bearer 123',
+          },
+        })
           .get("/quote/")
           .replyWithFile(200, __dirname + '/mocks/allQuotes.json', {
             'Content-Type': 'application/json',
