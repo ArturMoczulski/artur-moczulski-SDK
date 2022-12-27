@@ -8,6 +8,7 @@ you will need to obtain an [access key for The One API](https://the-one-api.dev/
 ```
 git clone git@github.com:ArturMoczulski/artur-moczulski-SDK.git
 cd artur-moczulski-SDK/docs/example-project
+npm install
 cp .env.example .env
 ```
 
