@@ -9,6 +9,7 @@
   "author": "Artur Moczulski",
   "license": "ISC",
   "dependencies": {
-    "artur-moczulski-sdk": "^1.0.0"
+    "artur-moczulski-sdk": "^1.1.0",
+    "terminal-kit": "^3.0.0"
   }
 }
