@@ -1,4 +1,4 @@
-const theOneSDK = require('artur-moczulski-sdk')
+const theOneSDK = require('artur-moczulski-sdk')()
 const term = require( 'terminal-kit' ).terminal ;
 
 term.cyan( 'The One API browser\n' ) ;
