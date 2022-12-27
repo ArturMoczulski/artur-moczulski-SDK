@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "artur-moczulski-sdk": "*",
+    "dotenv": "^16.0.3",
     "terminal-kit": "^3.0.0"
   }
 }
