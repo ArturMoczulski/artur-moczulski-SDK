@@ -25,5 +25,20 @@ module.exports = (theOneSDK) => {
       });
     });
 
+    describe('#book()', function () {
+      this.beforeAll(() => {
+        nock("https://the-one-api.dev/v2/")
+          .get("/book/mockApiId001")
+          .replyWithFile(200, __dirname + '/mocks/book_mockApiId001.json', {
+            'Content-Type': 'application/json',
+          })
+      })
+
+      it('should return The Fellowship Of The Ring book', async function () {
+        const result = await theOneSDK.book("mockApiId001")
+        expect(result.name).to.equal("The Fellowship Of The Ring")
+      });
+    });
+
   }
 }
