@@ -16,10 +16,10 @@ module.exports = (theOneSDK) => {
       })
 
       it('should return the list of LOTR books', async function () {
-
         const result = await theOneSDK.books()
         expect(result.length).equal(3)
         expect(result[0].name).to.equal("The Fellowship Of The Ring")
+        expect(result[0].fetchChapters).to.be.a("function")
         expect(result[1].name).to.equal("The Two Towers")
         expect(result[2].name).to.equal("The Return Of The King")
       });
@@ -37,6 +37,7 @@ module.exports = (theOneSDK) => {
       it('should return The Fellowship Of The Ring book', async function () {
         const result = await theOneSDK.book("mockApiId001")
         expect(result.name).to.equal("The Fellowship Of The Ring")
+        expect(result.fetchChapters).to.be.a("function")
       });
     });
 
