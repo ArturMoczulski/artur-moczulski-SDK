@@ -25,14 +25,45 @@ const theOneSDK = require('artur-moczulski-SDK')({
 })
 ```
 
-### Working with the *Book* endpoint
+### Working with the Books methods 
 
-*Note:* The *Book* endpoint is the only endpoint which will not require a prior authentication.
+*Note:* The *book/* endpoint is the only endpoint which will not require a prior authentication.
 
 #### Obtain the list of all books
 
 ```
-await theOneSDK.books()
+let books = await theOneSDK.books()
+
+console.log(books)
+```
+
+#### Fetch a specific book
+
+```
+let book = await theOneSDK.book(id)
+
+console.log(book)
+```
+
+#### Fetch chapters of a book
+
+```
+let book = await theOneSDK.book(id)
+await book.fetchChapters()
+
+console.log(book.chapters)
+```
+
+### Working with the Quotes methods 
+
+#### Obtain the list of all books
+
+*Note:* The *quote/* endpoint will require an access key to be configured
+
+```
+let quotes = await theOneSDK.quotes()
+
+console.log(quotes)
 ```
 
 ## Testing
