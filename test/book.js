@@ -17,13 +17,11 @@ module.exports = (theOneSDK) => {
 
       it('should return the list of LOTR books', async function () {
 
-        // const response = await request
-        //   .get('/book/')
-        // expect(response.status).equal(200);
-        // expect(response.body.total).equal(3);
-
         const result = await theOneSDK.books()
         expect(result.length).equal(3)
+        expect(result[0].name).to.equal("The Fellowship Of The Ring")
+        expect(result[1].name).to.equal("The Two Towers")
+        expect(result[2].name).to.equal("The Return Of The King")
       });
     });
 
