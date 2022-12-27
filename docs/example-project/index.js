@@ -24,8 +24,6 @@ term.singleColumnMenu( items , async function( error , response ) {
     let fellowship = books[0]
     await fellowship.fetchChapters()
     responseText = fellowship.chapters.map(chapter => chapter.chapterName)
-
-    responseText = books.map(book => book.name)
   }
 
 	term( '\n' ).eraseLineAfter.green(
