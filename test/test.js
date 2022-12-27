@@ -30,8 +30,10 @@ describe('theOneSDK', function () {
     const theOneSDK = require('../lib/entry')({debug: "DEBUG"})
 
     const bookSuite = require('./book')(theOneSDK)
-
     describe('book suite', bookSuite.bind(this));
+
+    const quoteSuite = require('./quote')(theOneSDK)
+    describe('quote suite', quoteSuite.bind(this));
   });
   
 });
