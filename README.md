@@ -11,7 +11,7 @@ cd artur-moczulski-SDK/docs/example-project
 cp .env.example .env
 ```
 
-Change the access key in .env to your The One API access key.
+Change the access key in .env to your The One API access key in the example project.
 
 `node index.js`
 
