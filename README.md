@@ -20,9 +20,10 @@ const theOneSDK = require('artur-moczulski-SDK')()
 ### Authentication
 
 ```
-await theOneSDK.auth("your-access-key")
+const theOneSDK = require('artur-moczulski-SDK')({
+  accessKey: "yourAccessKey"
+})
 ```
-
 
 ### Working with the *Book* endpoint
 
